@@ -102,14 +102,30 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 ## Catatan Khusus
 
 - install nestjs
-npm i -g @nestjs/cli
+```bash
+$ npm i -g @nestjs/cli
+```
 - create project dg nama exbag
-nest new exbag
+```bash
+$ nest new exbag
+```
+
 - install axios untuk http request
-npm install axios
+```bash
+$ npm install axios
+```
+
 - create CRUD structure untuk object bookings
-nest g resource bookings
+```bash
+$ nest g resource bookings
+```
+
 - install typeorm untuk postgres
-npm install --save @nestjs/typeorm typeorm pg
+```bash
+$ npm install --save @nestjs/typeorm typeorm pg
+```
+
 - Install class-validator & class-transformer
-npm i --save class-validator class-transformer
+```bash
+$ npm i --save class-validator class-transformer
+```
