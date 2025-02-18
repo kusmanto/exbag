@@ -22,6 +22,9 @@ export class Pax {
     destination_airport: string;
 
     @Column({ length: 50 })
+    flight_no: string;
+
+    @Column({ length: 50 })
     ga_miles_no: string;
 
     @Column({ length: 50 })

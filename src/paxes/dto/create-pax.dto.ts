@@ -28,6 +28,9 @@ export class CreatePaxDto {
     destination_airport: string;
 
     @IsString()
+    flight_no: string;
+
+    @IsString()
     ga_miles_no: string;
 
     @IsString()

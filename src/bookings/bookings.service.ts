@@ -74,6 +74,10 @@ export class BookingsService {
     return this.bookingRepository.findOne({ where: { id }, relations: ['paxes'] });
   }
 
+  async findOneByPnrCode(pnrCode: string): Promise<Booking> {
+    return this.bookingRepository.findOne({ where: { pnr_code: pnrCode }, relations: ['paxes'] });
+  }
+
   async update(id: number, updateBookingDto: UpdateBookingDto): Promise<Booking> {
     const { paxes, ...bookingData } = updateBookingDto;
 

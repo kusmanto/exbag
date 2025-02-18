@@ -26,6 +26,12 @@ export class BookingsController {
     return this.bookingsService.findOne(+id);
   }
 
+  @Get('pnr/:pnr_code')
+  async findbyPnrCode(@Param('pnr_code') pnrCode: string): Promise<Booking> {
+    console.log(pnrCode);
+    return this.bookingsService.findOneByPnrCode(pnrCode);
+  }
+
   @Put(':id')
   async update(@Param('id') id: string, @Body() updateBookingDto: UpdateBookingDto): Promise<Booking> {
     return this.bookingsService.update(+id, updateBookingDto);

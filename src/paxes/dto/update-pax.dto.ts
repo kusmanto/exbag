@@ -7,6 +7,7 @@ export class UpdatePaxDto extends PartialType(CreatePaxDto) {
     departure_date?: Date;
     departure_airport?: string;
     destination_airport?: string;
+    flight_no?: string;
     ga_miles_no?: string;
     ga_miles_tier?: string;
     free_bag_allow?: number;
