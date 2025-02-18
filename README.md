@@ -97,3 +97,19 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+## Catatan Khusus
+
+- install nestjs
+npm i -g @nestjs/cli
+- create project dg nama exbag
+nest new exbag
+- install axios untuk http request
+npm install axios
+- create CRUD structure untuk object bookings
+nest g resource bookings
+- install typeorm untuk postgres
+npm install --save @nestjs/typeorm typeorm pg
+- Install class-validator & class-transformer
+npm i --save class-validator class-transformer
